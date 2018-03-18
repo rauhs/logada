@@ -183,5 +183,3 @@
     ;; Return the status messages:
     (get-last-statuses context 1000)))
 
-(comment
-  ())
