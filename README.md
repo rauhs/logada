@@ -23,6 +23,21 @@ The config is instead done with Hiccup from your clojure code:
     [:logger {:name 'foo.bar, :level :warn}]])
 ``` 
 
+# Dependencies
+
+It has no dependencies. You should require the libs you want by yourself.
+
+Example:
+
+```clojure
+[[org.clojure/clojure "1.9.0"]
+ [org.clojure/tools.logging "0.4.0"]
+ [ch.qos.logback/logback-classic "1.2.3" :exclusions [[org.slf4j/slf4j-api]]]
+ [org.slf4j/jul-to-slf4j "1.7.25"]
+ [org.slf4j/jcl-over-slf4j "1.7.25"]
+ [org.slf4j/log4j-over-slf4j "1.7.25"]]
+```
+
 # Clojars
 
 [![Clojars Project](http://clojars.org/logada/latest-version.svg)](http://clojars.org/logada)
