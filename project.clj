@@ -13,6 +13,8 @@
   :test-paths ["test/clj"]
   :target-path "target/%s/"
 
+  :repositories [["clojars" {:sign-releases false}]]
+
   ;; Directory in which to place AOT-compiled files. Including %s will
   ;; splice the :target-path into this value.
   :compile-path "%s/class-files"
